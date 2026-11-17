@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gabriel Souza · Engenharia Elétrica</title>
+<meta name="description" content="Portfólio de Gabriel Silva Ribeiro de Souza, estudante de Engenharia Elétrica na UFC: ferramentas de estudo interativas e projetos construídos com IA.">
+<style>
+:root{--bg:#0b0d0c;--panel:#121614;--grid:#1c2420;--amber:#ffb000;--green:#39ff88;--text:#d8e0dc;--muted:#8a968f;--line:#26302b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:40px 40px}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{padding:72px 0 40px;border-bottom:1px solid var(--line)}
+.tag{color:var(--green);font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+h1{font-size:clamp(32px,6vw,52px);line-height:1.1;margin:12px 0 16px;color:var(--amber);text-shadow:0 0 18px rgba(255,176,0,.35)}
+.lead{max-width:720px;font-size:17px;color:var(--text)}
+.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-block;padding:10px 16px;border:1px solid var(--amber);color:var(--amber);text-decoration:none;border-radius:4px;font-size:14px}
+.btn:hover{background:var(--amber);color:var(--bg)}
+.btn.alt{border-color:var(--green);color:var(--green)}
+.btn.alt:hover{background:var(--green);color:var(--bg)}
+section{padding:48px 0;border-bottom:1px solid var(--line)}
+h2{font-size:24px;margin:0 0 6px;color:var(--amber)}
+h2::before{content:"> ";color:var(--green)}
+.sub{color:var(--muted);margin:0 0 28px;max-width:720px}
+h3.group{font-size:14px;color:var(--green);letter-spacing:.1em;text-transform:uppercase;margin:32px 0 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.card{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:20px;text-decoration:none;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--amber);transform:translateY(-2px)}
+.card h4{margin:0 0 8px;font-size:17px;color:var(--text)}
+.card p{margin:0 0 16px;font-size:14px;color:var(--muted);flex:1}
+.card .go{font-size:13px;color:var(--amber)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.chip{font-size:11px;padding:2px 8px;border:1px solid var(--line);border-radius:999px;color:var(--green)}
+.feature{background:var(--panel);border:1px solid var(--amber);border-radius:6px;padding:24px}
+.feature h4{margin:0 0 8px;font-size:20px;color:var(--amber)}
+.feature ul{margin:12px 0 20px;padding-left:20px;color:var(--text)}
+.note{font-size:13px;color:var(--muted);border-left:2px solid var(--green);padding-left:12px;margin-top:28px}
+footer{padding:32px 0 48px;color:var(--muted);font-size:13px}
+.blink{animation:b 1s steps(1) infinite}@keyframes b{50%{opacity:0}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="tag">Engenharia Elétrica · UFC</div>
+    <h1>Gabriel Souza<span class="blink">_</span></h1>
+    <p class="lead">Estudante de Engenharia Elétrica na Universidade Federal do Ceará, pesquisador PIBIC no Laboratório de Condicionadores de Energia (LCE/UFC). Uso IA para transformar problemas reais em ferramentas que funcionam: de simuladores para estudar Controle a jogos multiplayer.</p>
+    <div class="links">
+      <a class="btn" href="#estudo">Ferramentas de estudo</a>
+      <a class="btn" href="#projetos">Projetos</a>
+      <a class="btn alt" href="https://github.com/BielCarioca03" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="estudo">
+  <div class="wrap">
+    <h2>Ferramentas de estudo</h2>
+    <p class="sub">Páginas interativas que criei com IA para estudar as disciplinas do curso. Cada uma nasceu de uma dificuldade real em uma matéria e é usada nos meus estudos.</p>
+
+    <h3 class="group">Sistemas de Controle</h3>
+    <div class="grid">
+      <a class="card" href="https://claude.ai/artifact/TtCvXYPUf1Fq4idS7YLi61" target="_blank" rel="noopener">
+        <div class="chips"><span class="chip">simulação</span><span class="chip">polos e zeros</span></div>
+        <h4>Lugar das Raízes</h4>
+        <p>Aula interativa sobre o método do lugar das raízes: condições de ângulo e módulo, regras de construção passo a passo, laboratório de polos e zeros com resposta ao degrau e teste.</p>
+        <span class="go">abrir →</span>
+      </a>
+      <a class="card" href="https://claude.ai/artifact/Ck6oemgKTZSXL5jKzJ9S3J" target="_blank" rel="noopener">
+        <div class="chips"><span class="chip">modelagem</span><span class="chip">RLC</span><span class="chip">motor CC</span></div>
+        <h4>Modelagem de Sistemas Dinâmicos</h4>
+        <p>Impedâncias, massa-mola-amortecedor, circuito RLC, motor CC, linearização, redução de diagramas de blocos e teste rápido.</p>
+        <span class="go">abrir →</span>
+      </a>
+      <a class="card" href="https://claude.ai/artifact/Qh8yHLh8H1wrtu7roAaHVE" target="_blank" rel="noopener">
+        <div class="chips"><span class="chip">estabilidade</span></div>
+        <h4>Critério de Routh-Hurwitz</h4>
+        <p>Ferramenta de estudo sobre o critério de estabilidade de Routh-Hurwitz.</p>
+        <span class="go">abrir →</span>
+      </a>
+      <a class="card" href="https://claude.ai/artifact/TGFpbCMXeX5EvzLPYSV2X9" target="_blank" rel="noopener">
+        <div class="chips"><span class="chip">exercícios</span><span class="chip">diagramas de blocos</span></div>
+        <h4>Treino de Diagramas de Blocos</h4>
+        <p>Oito exercícios de equacionamento de diagramas de blocos, do básico ao desafio, com dica e solução revelada passo a passo.</p>
+        <span class="go">abrir →</span>
+      </a>
+    </div>
+
+    <h3 class="group">Eletromagnetismo</h3>
+    <div class="grid">
+      <a class="card" href="https://claude.ai/artifact/NwmsRwhTotdehEcPWu6abm" target="_blank" rel="noopener">
+        <div class="chips"><span class="chip">vetores</span><span class="chip">exercícios</span></div>
+        <h4>Transformação de Coordenadas</h4>
+        <p>Conversão de pontos e vetores entre coordenadas cartesianas, cilíndricas e esféricas, com diagrama, matrizes de transformação e oito exercícios resolvidos.</p>
+        <span class="go">abrir →</span>
+      </a>
+      <a class="card" href="https://claude.ai/artifact/3Unk8zuYHQATsjhXZrFR17" target="_blank" rel="noopener">
+        <div class="chips"><span class="chip">campo elétrico</span><span class="chip">formulário</span></div>
+        <h4>Lei de Coulomb e Campo Elétrico</h4>
+        <p>Guia sobre lei de Coulomb, campo elétrico e distribuições de carga, com formulário e oito exercícios resolvidos.</p>
+        <span class="go">abrir →</span>
+      </a>
+      <a class="card" href="https://claude.ai/artifact/T2NmJEKXmcTCfztyLLUHj5" target="_blank" rel="noopener">
+        <div class="chips"><span class="chip">interfaces</span></div>
+        <h4>Condições de Contorno</h4>
+        <p>Estudo das condições de contorno dos campos na interface entre meios.</p>
+        <span class="go">abrir →</span>
+      </a>
+      <a class="card" href="https://claude.ai/artifact/B9Y8Qb7aRFFEiFXx5H5gP2" target="_blank" rel="noopener">
+        <div class="chips"><span class="chip">desafios</span></div>
+        <h4>Desafios de Eletromagnetismo Aplicado I</h4>
+        <p>Lista de desafios para praticar os conteúdos de Eletromagnetismo Aplicado I.</p>
+        <span class="go">abrir →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="projetos">
+  <div class="wrap">
+    <h2>Projetos</h2>
+    <p class="sub">Produtos e repositórios construídos do zero com IA, e a pesquisa que desenvolvo no laboratório.</p>
+
+    <div class="feature">
+      <div class="chips"><span class="chip">jogo</span><span class="chip">multiplayer</span><span class="chip">Firebase</span></div>
+      <h4>Não Pode! · jogo de festa</h4>
+      <p>Jogo no estilo "adivinhe a palavra sem dizer as proibidas", criado com IA a partir de uma ideia vista em um vídeo.</p>
+      <ul>
+        <li>Configuração de equipes, cronômetro e placar</li>
+        <li>Cerca de 130 cartas originais em português, várias com temas nordestinos</li>
+        <li>Versão online com salas, papéis rotativos e cronômetro sincronizado em tempo real via Firebase</li>
+      </ul>
+      <a class="btn" href="https://claude.ai/artifact/L9BGS9Fk5WXaM3vJorio6j" target="_blank" rel="noopener">jogar →</a>
+    </div>
+
+    <div class="grid" style="margin-top:16px">
+      <a class="card" href="https://github.com/BielCarioca03/prompts-engenharia" target="_blank" rel="noopener">
+        <div class="chips"><span class="chip">prompt engineering</span><span class="chip">GitHub</span></div>
+        <h4>Prompts de Engenharia</h4>
+        <p>Biblioteca de prompts estruturados que uso em estudo, relatórios em LaTeX, depuração de firmware e documentação Doxygen.</p>
+        <span class="go">ver repositório →</span>
+      </a>
+      <div class="card">
+        <div class="chips"><span class="chip">C</span><span class="chip">STM32</span><span class="chip">pesquisa</span></div>
+        <h4>PotIA · LCE/UFC</h4>
+        <p>Firmware em C para STM32 de um sistema de identificação preditiva de falhas em inversores de potência: aquisição de sinais, sensores de temperatura e vibração, comunicação SPI com CRC. Código do laboratório, não público.</p>
+        <span class="go" style="color:var(--muted)">projeto de pesquisa</span>
+      </div>
+    </div>
+
+    <p class="note">As ferramentas e o jogo foram construídos com IA (Claude), a partir das minhas ideias, especificações e revisões. As páginas abrem hospedadas no Claude.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">Gabriel Silva Ribeiro de Souza · Fortaleza, CE · <a href="https://github.com/BielCarioca03" target="_blank" rel="noopener">github.com/BielCarioca03</a></div>
+</footer>
+</body>
+</html>
